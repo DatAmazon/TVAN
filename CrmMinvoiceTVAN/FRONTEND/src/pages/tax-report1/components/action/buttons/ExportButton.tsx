@@ -4,3 +4,4 @@ import { FC } from 'react'
 const TaxReportExportButton: FC<{ exportCallback: () => void }> = ({ exportCallback}) =>{
     return (<MinvoiceButton onClick={exportCallback}>Kết xuất</MinvoiceButton>)
 } 
+export default TaxReportExportButton

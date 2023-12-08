@@ -3,7 +3,7 @@ import { css } from '@emotion/react';
 import { Table } from 'antd';
 import MinvoiceTableColumn from '../table-column';
 
-interface MinvoiceTableProps<T extends object> extends TableProps<T> {
+export interface MinvoiceTableProps<T extends object> extends TableProps<T> {
   height?: string;
 }
 

@@ -1,3 +1,4 @@
+import { Dayjs } from 'dayjs'
 export interface MongoQueryResponseModel<T> {
     docs: Array<T>,
     totalDocs: number,
@@ -20,4 +21,9 @@ export interface MinvoiceResponseModel<T> {
     code: number,
     message: string | null,
     data: T
+}
+
+export interface QueryDateModel {
+    fromDate: Dayjs | undefined,
+    toDate: Dayjs | undefined
 }
